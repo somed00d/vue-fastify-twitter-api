@@ -12,7 +12,9 @@
   "author": "Matschik <mathieu.schimmerling@protonmail.com>",
   "license": "MIT",
   "dependencies": {
-    "fastify": "^3.27.2"
+    "fastify": "^3.27.2",
+    "fastify-env": "^2.1.1",
+    "twitter-api-v2": "^1.11.0"
   },
   "devDependencies": {
     "@types/node": "latest",
