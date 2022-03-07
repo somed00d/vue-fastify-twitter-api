@@ -140,7 +140,7 @@ function getUsernameData(twitterUsername: string) {
 </script>
 
 <template>
-  <TwitterInput @twitter-username="getUsernameData($event)"/>
+  <TwitterInput @twitter-username="getUsernameData($event)" />
   <TwitterOutput :twitter-data="twitterData" />
 </template>
 
