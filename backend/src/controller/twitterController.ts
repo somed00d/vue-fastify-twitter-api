@@ -5,7 +5,7 @@ type TwitterRequest = FastifyRequest<{
   Params: { username: string };
 }>;
 
-export default async function userController(fastify: FastifyInstance) {
+export default async function twitterController(fastify: FastifyInstance) {
   const twitterClient = new TwitterApi(
     String(process.env.TWITTER_BEARER_TOKEN)
   );
