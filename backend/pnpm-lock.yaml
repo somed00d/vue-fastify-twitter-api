@@ -4,6 +4,7 @@ specifiers:
   '@types/node': latest
   cross-env: ^7.0.3
   fastify: ^3.27.2
+  fastify-cors: ^6.0.3
   fastify-env: ^2.1.1
   fastify-tsconfig: ^1.0.1
   nodemon: ^2.0.15
@@ -15,6 +16,7 @@ specifiers:
 
 dependencies:
   fastify: 3.27.2
+  fastify-cors: 6.0.3
   fastify-env: 2.1.1
   twitter-api-v2: 1.11.0
 
@@ -386,6 +388,13 @@ packages:
 
   /fast-safe-stringify/2.1.1:
     resolution: {integrity: sha512-W+KJc2dmILlPplD/H4K9l9LcAHAfPtP6BY84uVLXQ6Evcz9Lcg33Y2z1IVblT6xdY54PXYVHEv+0Wpq8Io6zkA==}
+    dev: false
+
+  /fastify-cors/6.0.3:
+    resolution: {integrity: sha512-fMbXubKKyBHHCfSBtsCi3+7VyVRdhJQmGes5gM+eGKkRErCdm0NaYO0ozd31BQBL1ycoTIjbqOZhJo4RTF/Vlg==}
+    dependencies:
+      fastify-plugin: 3.0.1
+      vary: 1.1.2
     dev: false
 
   /fastify-env/2.1.1:
@@ -1161,6 +1170,11 @@ packages:
     dependencies:
       prepend-http: 2.0.0
     dev: true
+
+  /vary/1.1.2:
+    resolution: {integrity: sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=}
+    engines: {node: '>= 0.8'}
+    dev: false
 
   /which/2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}

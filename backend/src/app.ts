@@ -1,5 +1,6 @@
 import fastify from "fastify";
 import fastifyEnv from "fastify-env";
+import fastifyCors from "fastify-cors";
 import router from "./router";
 
 const schema = {
@@ -26,5 +27,6 @@ const server = fastify({
 // Middleware: Router
 server.register(fastifyEnv, options);
 server.register(router);
+server.register(fastifyCors);
 
 export default server;
